@@ -1,15 +1,34 @@
-window.onscroll = function() {scrollFunction()};
+emailjs.init('OTMtb4vbOxp7Wr4Ke')
 
-function scrollFunction() {
-if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    document.getElementById("myBtn").style.display = "block";
-} else {
-    document.getElementById("myBtn").style.display = "none";
-}
-}
+let from_name = document.getElementById("from_name")
+let from_email = document.getElementById("from_email")
+let from_msg = document.getElementById("message")
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-document.body.scrollTop = 0; // For Chrome, Safari and Opera 
-document.documentElement.scrollTop = 0; // For IE and Firefox
-}
+const btn = document.getElementById('button');
+
+document.getElementById('form')
+    .addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        btn.value = 'Sending...';
+
+        const serviceID = 'default_service';
+        const templateID = 'template_v53ze08';
+
+        emailjs.sendForm(serviceID, templateID, this)
+            .then(() => {
+                btn.value = 'Send Email';
+                btn.value = "Sent";
+            }, (err) => {
+                btn.value = 'Sent';
+                alert(JSON.stringify(err));
+            });
+    });
+
+btn.addEventListener("click", () => {
+    setTimeout(() => {
+        from_name.value = ""
+        from_email.value = ""
+        from_msg.value = ""
+    }, 1500)
+})
