@@ -5,84 +5,277 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Полтавець Артем | Портфоліо</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
-    <link rel="shortcut icon" href="./assets/imgs/Буква-removebg-preview.png" type="image/x-icon" />
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-    </script>
-    <script src="./assets/js/main.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
-    <script type="text/javascript"></script>
 </head>
 
 <body>
-    <img src="./assets/imgs/Буква-removebg-preview.png" class="img">
-    <div class="nav">
-        <div class="nav">
-            <input type="checkbox" id="nav-check">
-            <div class="nav-header">
-                <div class="nav-title">
+
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#">Портфоліо</a>
+            </div>
+            <div class="main_list" id="mainListDiv">
+                <ul>
+                    <li><a href="#ser">Послуги</a></li>
+                    <li><a href="#progs">Проекти</a></li>
+                    <li><a href="#awards">Нагороди</a></li>
+                    <li><a href="#me">Про мене</a></li>
+                    <li class="call" style="color: rgb(255, 255, 255);">Написати</li>
+                </ul>
+            </div>
+            <div class="media_button">
+                <button class="main_media_button" id="mediaButton">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="home"></section>
+
+    <div class="progs" id="progs">
+        <h1 style="color: white;">Проекти</h1>
+        <div class="contains">
+            <div class="cont ani">
+                <div class="img1"></div>
+            </div>
+
+            <div class="cont2 ani">
+                <div class="img2"></div>
+            </div>
+
+            <div class="cont3 ani">
+                <div class="img3"></div>
+            </div>
+        </div>
+        <div class="containsec">
+            <div class="cont4 ani">
+                <div class="img4"></div>
+            </div>
+            <div class="cont5 ani">
+                <div class="img5"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ski" id="ski">
+        <h1 class="title" style="text-align: center; font-family: 'Slackside One', cursive; color: white; font-size: 35px;">Навички</h1>
+        <div class="pats sectors">
+            <div class="pat1 ani">
+                <i class="fa fa-laptop-code"></i>
+                <p>Знання HTML CSS JS</p>
+            </div>
+            <div class="pat2 ani">
+                <i class="fa-brands fa-bootstrap"></i>
+                <p>Знання Bootstrap</p>
+            </div>
+            <div class="pat3 anith">
+                <i class="fa-brands fa-angular"></i>
+                <p>Володіння роботи з Angular</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="sertificate" id="awards">
+        <h1 style="font-family: 'Slackside One', cursive;">Нагороди</h1>
+        <img class="ani" src="./assets/imgs/sert.jpg" width="600px">
+    </div>
+
+    <div class="abme" id="me">
+        <h1 style="color: white;">Про мене</h1>
+        <div class="accord">
+            <button class="accordion anisec">Початок шляху в розробку</button>
+            <div class="panel">
+                <p class="fir">Почав цікавитись розробкою ще з 2021 року</p>
+            </div>
+
+            <button class="accordion anisec">Розвиток хоббі</button>
+            <div class="panel">
+                <p class="sec">Намагався вивчити Frontend розробку по <span>YouTube.</span></p>
+            </div>
+
+            <button class="accordion anisec">Сьогодення</button>
+            <div class="panel">
+                <p class="third">Навчався в <span class="skilll">Skill</span><span class="up">Up </span>курсах. Маю гарну кількість знань у верстці та <span class="js">Js</span>.Помимо HTML, CSS, JS знаю фреймвор, як <span class="angular">Angular</span> та бібліотеку
+                    <span class="boots">Bootstrap</span></p>
+            </div>
+            <div class="md">
+                <button><a href="">Більше про мене</a></button>
+            </div>
+        </div>
+
+        <div class="modal">
+            <div class="modal-content">
+                <button class="trigger close-button" id="x">x</button>
+                <form id="form">
+                    <h1 class="main">Що вас цікавить?</h1>
+                    <div class="field1">
+                        <label for="from_name"></label>
+                        <input type="text" name="from_name" id="from_name" placeholder="Ім'я" required>
+                    </div>
+                    <div class="field2">
+                        <label for="from_email"></label>
+                        <input type="email" name="from_email" id="from_email" placeholder="Ел. пошта" required>
+                    </div>
+                    <div class="field3">
+                        <label for="message"></label>
+                        <textarea type="input" name="message" id="message" placeholder="Ваше повідомлення" required></textarea>
+                    </div>
+
+                    <input type="submit" id="button" value="Надіслати" required>
+                </form>
+                <div class="social" style="font-size: 29px; text-align: center; margin-top: 50px; margin-left: -40px;">
+                    <i style="margin-right: 20px;" class="fa-brands fa-instagram"></i>
+                    <i style="margin-right: 20px;" class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-linkedin"></i>
                 </div>
             </div>
-            <div class="nav-btn">
-                <label for="nav-check">
-          <span></span>
-          <span></span>
-          <span></span>
-        </label>
-            </div>
-
-            <div class="nav-links">
-                <a href="">Progects</a>
-                <a href="#skills">Skills</a>
-                <a href="#abme">About me</a>
-                <a href="#wtm">Write to me</a>
-                <a href="#md">More details</a>
-                <button class="forme"><a href="./assets/page/mess.html">Write for me</a></button>
-            </div>
         </div>
 
 
 
-        <h1 class="port">Portfolio</h1>
+
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+        <script type="text/javascript">
+            emailjs.init('OTMtb4vbOxp7Wr4Ke')
+        </script>
+        <script>
+            const btn = document.getElementById('button');
+
+            document.getElementById('form')
+                .addEventListener('submit', function(event) {
+                    event.preventDefault();
+
+                    btn.value = 'Sending...';
+
+                    const serviceID = 'default_service';
+                    const templateID = 'template_v53ze08';
+
+                    emailjs.sendForm(serviceID, templateID, this)
+                        .then(() => {
+                            btn.value = 'Send Email';
+                            btn.value = "Sent";
+                        }, (err) => {
+                            btn.value = 'Sent';
+                            alert(JSON.stringify(err));
+                        });
+                });
+
+            const modal = document.querySelector(".modal");
+            const trigger = document.querySelector(".call");
+            const closeButton = document.querySelector(".close-button");
+
+            function toggleModal() {
+                modal.classList.toggle("show-modal");
+            }
+
+            function windowOnClick(event) {
+                if (event.target === modal) {
+                    toggleModal();
+                }
+            }
+            trigger.addEventListener("click", toggleModal);
+            closeButton.addEventListener("click", toggleModal);
+            window.addEventListener("click", windowOnClick);
+
+            var mainListDiv = document.getElementById("mainListDiv"),
+                mediaButton = document.getElementById("mediaButton");
+
+            mediaButton.onclick = function() {
+
+                "use strict";
+
+                mainListDiv.classList.toggle("show_list");
+                mediaButton.classList.toggle("active");
+
+            };
 
 
+            var acc = document.getElementsByClassName("accordion");
+            var i;
 
-        <h1 class="sk">Skills</h1>
-        <div class="skills">
-            <div class="pat1">
-                <i class="fa-sharp fa-solid fa-code" style="color: #000000;"></i>
-                <p>Web developing</p>
-            </div>
-            <div class="pat2">
-                <i class="fa fa-gear" style="color: #000000;"></i>
-                <p>Site serving</p>
-            </div>
-            <div class="pat3">
-                <i class="fa fa-screwdriver-wrench" style="color: #000000;"></i>
-                <p>Fixing problems</p>
-            </div>
-        </div>
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
+            }
 
-        <div class="ab-me" id="abme">
-            <h1>About me</h1>
-            <div class="desc">
-                <p>My name is Artem. I`m engoying by frontend. <br> So much time i spend lerning and <br> improving myself.Learning and creating something <br> big it`s cool</p>
-                <img src="./assets/imgs/dev.png" alt="">
-            </div>
-        </div>
+            const the_animation = document.querySelectorAll('.ani')
 
-        <div class="footer" id="md">
-            <p class="me">Artem Poltavets</p>
-            <ul>
-                <li>Frontend</li>
-                <li>Development</li>
-                <li>Privacy and policy</li>
-            </ul>
-        </div>
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('scroll-animation')
+                    } else {
+                        entry.target.classList.remove('scroll-animation')
+                    }
+
+                })
+            }, {
+                threshold: 0.5
+            });
+            //
+            for (let i = 0; i < the_animation.length; i++) {
+                const elements = the_animation[i];
+
+                observer.observe(elements);
+            }
+
+            const the_animationsec = document.querySelectorAll('.anisec')
+
+            const observers = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('scroll-animationsec')
+                    } else {
+                        entry.target.classList.remove('scroll-animationsec')
+                    }
+
+                })
+            }, {
+                threshold: 0.5
+            });
+            //
+            for (let i = 0; i < the_animationsec.length; i++) {
+                const elements = the_animationsec[i];
+
+                observers.observe(elements);
+            }
+
+            const the_animationth = document.querySelectorAll('.anith')
+
+            const observerss = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('scroll-animationth')
+                    } else {
+                        entry.target.classList.remove('scroll-animationth')
+                    }
+
+                })
+            }, {
+                threshold: 0.5
+            });
+            //
+            for (let i = 0; i < the_animationth.length; i++) {
+                const elements = the_animationth[i];
+
+                observerss.observe(elements);
+            }
+        </script>
 </body>
 
 </html>
