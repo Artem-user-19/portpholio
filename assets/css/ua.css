@@ -1,0 +1,779 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rubik:ital@1&family=Russo+One&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #161414;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    color: white;
+    position: relative;
+}
+
+
+/* responsive */
+
+nav.active {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+nav h2.logo {
+    font-family: "Poppins", "sans-serif";
+    font-size: 42px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+nav .bars {
+    position: absolute;
+    right: 1rem;
+    font-size: xx-large;
+    display: none;
+}
+
+ul.nav-links {
+    display: flex;
+    font-family: "Poppins", "sans-serif";
+}
+
+
+/* responsive */
+
+nav.active ul.nav-links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    animation: app 0.5s;
+}
+
+li.nav-link {
+    list-style: none;
+    margin: 0.5rem 1rem;
+    padding: 0.4rem;
+    display: flex;
+    align-items: center;
+    font-family: "Poppins", "sans-serif";
+}
+
+li.nav-link.auth {
+    background-color: red;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+li.nav-link a {
+    color: white;
+    text-decoration: none;
+    font-family: "Poppins", "sans-serif";
+    font-weight: 300;
+}
+
+.langs {
+    color: white;
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.langs p {
+    font-family: "Poppins", "sans-serif";
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.red {
+    border-bottom: 1px solid red;
+    transition: 0.6s;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.wrap {
+    border: 2px solid #7391FD;
+    width: 1540px;
+    height: 429px;
+    animation: blink 3s infinite;
+    border-radius: 20% 10%;
+}
+
+.title {
+    font-family: 'Russo One', sans-serif;
+    color: #7391FD;
+    font-size: 56px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.dev {
+    font-family: 'Russo One', sans-serif;
+    color: white;
+    margin-left: 50px;
+    margin-top: 40px;
+    font-size: 56px;
+}
+
+.blue {
+    color: #7391FD;
+}
+
+.insp {
+    color: white;
+    font-family: "Poppins", "sans-serif";
+    font-size: 16px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.social {
+    display: flex;
+    font-size: 25px;
+    margin-left: 50px;
+    margin-top: 40px;
+    gap: 30px;
+}
+
+.me {
+    text-align: right;
+    margin-right: 300px;
+    margin-top: -204px;
+}
+
+.services {
+    color: #7391FD;
+    font-size: 58px;
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.cli {
+    font-family: "Poppins", "sans-serif";
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+
+.cont1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 60px;
+    margin-top: 60px;
+}
+
+.cont2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.frag4,
+.frag2,
+.frag3,
+.frag1 {
+    width: 361px;
+    height: 396px;
+    border: 1px solid #7391FD;
+    border-radius: 10% 5%;
+    animation: blink 3s infinite;
+}
+
+.layout2,
+.layout3,
+.layout4,
+.layout {
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+    margin-top: 20px;
+    color: #7391FD;
+}
+
+.fa-code {
+    font-size: 30px;
+    background-color: #fff;
+    padding: 12px 10px;
+    border-radius: 50%;
+}
+
+.fa-mobile {
+    font-size: 30px;
+    background-color: #fff;
+    padding: 10px 14px;
+    border-radius: 50%;
+}
+
+.fa-square-js {
+    font-size: 30px;
+    background-color: #fff;
+    padding: 12px 14px;
+    border-radius: 50%;
+}
+
+.fa-figma {
+    font-size: 30px;
+    background-color: #fff;
+    padding: 12px 16px;
+    border-radius: 50%;
+}
+
+.font {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.elem {
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.elem p {
+    font-family: "Poppins", "sans-serif";
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.figma,
+.js {
+    text-align: center;
+    color: white;
+    font-family: "Poppins", "sans-serif";
+    font-size: 40px;
+    margin-top: 50px;
+}
+
+.aboutme {
+    text-align: center;
+    color: #7391FD;
+    font-size: 56px;
+    font-family: 'Russo One', sans-serif;
+    margin-top: 50px;
+}
+
+.name,
+.story,
+.specskills {
+    margin-left: 300px;
+}
+
+.me2 {
+    margin-left: 300px;
+    margin-top: 200px;
+}
+
+.name {
+    font-size: 36px;
+    color: #7391FD;
+    font-family: 'Russo One', sans-serif;
+    margin-top: -560px;
+}
+
+.artem {
+    text-align: left;
+    margin-left: 800px;
+    margin-top: -300px;
+}
+
+.story {
+    color: white;
+    font-size: 20px;
+    font-family: "Poppins", "sans-serif";
+    margin-top: 10px;
+}
+
+.skills {
+    color: #7391FD;
+    font-family: 'Russo One', sans-serif;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.bar2,
+.bar3,
+.bar1 {
+    margin-top: 50px;
+    width: 440px;
+}
+
+.stat {
+    display: flex;
+}
+
+.container {
+    width: 432px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.blucol {
+    width: 410px;
+    height: 10px;
+    background-color: #7391FD;
+    border-radius: 10px;
+}
+
+.blucol2 {
+    width: 380px;
+    height: 10px;
+    background-color: #7391FD;
+    border-radius: 10px;
+}
+
+.blucol3 {
+    width: 350px;
+    height: 10px;
+    background-color: #7391FD;
+    border-radius: 10px;
+}
+
+.flex,
+.res,
+.cre {
+    font-family: "Poppins", "sans-serif";
+    color: white;
+    font-size: 20px;
+}
+
+.per {
+    font-family: "Poppins", "sans-serif";
+    color: white;
+    font-size: 20px;
+    margin-left: 250px;
+}
+
+.per2 {
+    font-family: "Poppins", "sans-serif";
+    color: white;
+    font-size: 20px;
+    margin-left: 220px;
+}
+
+.per3 {
+    font-family: "Poppins", "sans-serif";
+    color: white;
+    font-size: 20px;
+    margin-left: 290px;
+}
+
+.prog {
+    text-align: center;
+    color: #7391FD;
+    font-family: 'Russo One', sans-serif;
+    margin-top: 100px;
+    font-size: 56px;
+}
+
+.notif,
+.creat {
+    color: white;
+    font-family: "Poppins", "sans-serif";
+    text-align: center;
+    margin-top: 10px;
+}
+
+.notif {
+    font-size: 12px;
+}
+
+.pat2,
+.pat1 {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.pat2 {
+    margin-top: 30px;
+}
+
+.img4 img,
+.img5 img,
+.img6 img,
+.img1 img,
+.img2 img,
+.img3 img {
+    transition: 0.4s;
+    width: 400px;
+}
+
+.img4 img:hover,
+.img5 img:hover,
+.img6 img:hover,
+.img1 img:hover,
+.img2 img:hover,
+.img3 img:hover {
+    width: 410px;
+}
+
+.img3 img {
+    height: 270px;
+}
+
+.img6 img {
+    height: 270px;
+}
+
+footer {
+    margin-top: 100px;
+    background-color: #362D2D;
+    padding: 20px 0px;
+}
+
+.port {
+    color: white;
+    text-align: left;
+    margin-left: 100px;
+    font-family: "Poppins", "sans-serif";
+    font-weight: 300;
+    font-size: 45px;
+    margin-top: 20px;
+}
+
+.field input {
+    background: none;
+    border: 1px solid #7391FD;
+    padding: 10px 20px;
+    outline: none;
+    color: white;
+    font-family: "Poppins", "sans-serif";
+    animation: blink 3s infinite;
+}
+
+.field textarea::placeholder,
+.field input::placeholder {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+textarea {
+    background: none;
+    border: 1px solid #7391FD;
+    padding: 10px 30px;
+    outline: none;
+    color: white;
+    font-family: "Poppins", "sans-serif";
+    animation: blink 3s infinite;
+}
+
+.one input {
+    margin-top: 30px;
+}
+
+.one,
+.two {
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.three {
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+#button {
+    border: none;
+    color: white;
+    font-family: "Poppins", "sans-serif";
+    background-color: #7391FD;
+    padding: 5px 10px;
+    transition: 0.3s;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+#button:hover {
+    border-radius: 10%;
+    animation: blink 3s infinite;
+}
+
+.reg {
+    text-align: left;
+    margin-left: 80px;
+    margin-top: 30px;
+}
+
+.t,
+.s {
+    margin-top: 10px;
+}
+
+.but {
+    text-align: left;
+    margin-left: 90px;
+    margin-top: 10px;
+}
+
+.contacts {
+    margin-top: -120px;
+}
+
+.phone {
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 290px;
+}
+
+.email {
+    text-align: right;
+    margin-right: 200px;
+    margin-top: 10px;
+}
+
+.mailtxt,
+.phonenumber {
+    font-family: "Poppins", "sans-serif";
+    color: white;
+}
+
+.fa-envelope,
+.fa-phone {
+    margin-right: 20px;
+    border: 1px solid white;
+    padding: 10px 10px;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+@keyframes app {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blink {
+    0% {
+        box-shadow: 0px 0px 10px white, 0px 0px 20px rgb(255, 0, 0);
+    }
+    50% {
+        box-shadow: 0px 0px 10px rgb(169, 138, 138), 0px 0px 20px rgb(86, 33, 232);
+    }
+    100% {
+        box-shadow: 0px 0px 10px white, 0px 0px 20px rgb(255, 0, 0);
+    }
+}
+
+@media screen and (max-width: 900px) {
+    nav .bars {
+        display: block;
+    }
+    nav .nav-links {
+        display: none;
+    }
+}
+
+@media (max-width:1629px) {
+    .artem {
+        margin-left: 500px;
+    }
+}
+
+@media (max-width:1335px) {
+    .me2 {
+        margin-left: 200px;
+    }
+    .artem {
+        margin-left: 300px;
+    }
+}
+
+@media (max-width:1283px) {
+    .pat1 {
+        display: grid;
+        grid-template-columns: 400px 400px;
+    }
+    .pat2 {
+        display: grid;
+        grid-template-columns: 400px 400px;
+    }
+    .img5 {
+        margin-top: -305px;
+    }
+    .img6 {
+        margin-left: 440px;
+        margin-top: -310px;
+    }
+}
+
+@media (max-width:1217px) {
+    .fa-phone {
+        margin-right: 10px;
+    }
+    .phonenumber {
+        margin-right: -290px;
+    }
+    .fa-envelope {
+        margin-right: 10px;
+    }
+    .email {
+        margin-right: 0px;
+    }
+}
+
+@media (max-width:1131px) {
+    .cont1 {
+        display: grid;
+    }
+}
+
+@media (max-width:1063px) {
+    .artem {
+        margin-top: 800px;
+        text-align: center;
+        margin-left: 0px;
+    }
+    .specskills {
+        justify-content: center;
+        margin-left: 0px;
+    }
+    .story,
+    .name {
+        margin-left: 0px;
+    }
+    .name {
+        margin-top: -750px;
+    }
+    .me2 {
+        text-align: center;
+        margin-left: 0px;
+        margin-top: -30px;
+    }
+}
+
+@media (max-width:1101px) {
+    .me {
+        display: none;
+    }
+    .dev,
+    .insp,
+    .title {
+        text-align: center;
+        margin-left: 0px;
+    }
+    .social {
+        justify-content: center;
+        margin-left: 0px;
+    }
+}
+
+@media (max-width:845px) {
+    .pat1,
+    .pat2 {
+        grid-template-columns: 200px;
+        margin-right: 200px;
+    }
+    .img5 {
+        margin-top: 0px;
+    }
+    .img6 {
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+}
+
+@media (max-width:609px) {
+    .contacts {
+        margin-top: 100px;
+    }
+    .email,
+    .phone {
+        text-align: center;
+    }
+    .reg {
+        text-align: center;
+        margin-left: 0px;
+    }
+    .port {
+        text-align: center;
+        margin-left: 0px;
+    }
+    #button {
+        text-align: center;
+        margin-left: 0px;
+    }
+}
+
+@media (max-width:473px) {
+    .title {
+        font-size: 36px;
+    }
+    .dev {
+        font-size: 36px;
+    }
+    .story {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:467px) {
+    .phone2 {
+        display: none;
+    }
+}
+
+@media (max-width:449px) {
+    .container {
+        width: 340px;
+    }
+    .blucol {
+        width: 310px;
+    }
+    .blucol2 {
+        width: 280px;
+    }
+    .blucol3 {
+        width: 250px;
+    }
+    .per {
+        margin-left: 200px;
+    }
+    .per2 {
+        margin-left: 160px;
+    }
+    .per3 {
+        margin-left: 200px;
+    }
+    .bar2,
+    .bar3,
+    .bar1 {
+        display: none;
+    }
+    .skills {
+        display: none;
+    }
+}
+
+@media (max-width:405px) {
+    .img1 img,
+    .img2 img,
+    .img3 img,
+    .img4 img,
+    .img5 img,
+    .img6 img {
+        width: 300px;
+        margin-left: 50px;
+    }
+}

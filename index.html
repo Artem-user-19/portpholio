@@ -3,278 +3,198 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Полтавець Артем | Портфоліо</title>
+    <title>Document</title>
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
 </head>
 
 <body>
-
-    <nav class="nav">
-        <div class="container">
-            <div class="logo">
-                <a href="#">Портфоліо</a>
-            </div>
-            <div class="main_list" id="mainListDiv">
-                <ul>
-                    <li><a href="#ser">Послуги</a></li>
-                    <li><a href="#progs">Проекти</a></li>
-                    <li><a href="#awards">Нагороди</a></li>
-                    <li><a href="#me">Про мене</a></li>
-                    <li class="call" style="color: rgb(255, 255, 255);">Написати</li>
-                </ul>
-            </div>
-            <div class="media_button">
-                <button class="main_media_button" id="mediaButton">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
+    <nav>
+        <h2 class="logo">Portfolio</h2>
+        <div class="bars">
+            <i class="fa fa-bars"></i>
         </div>
+        <ul class="nav-links ani">
+            <li class="nav-link"><a href="#">Home</a></li>
+            <li class="nav-link"><a href="#">Services</a></li>
+            <li class="nav-link"><a href="#">About me</a></li>
+            <li class="nav-link"><a href="#">Progects</a></li>
+            <li class="nav-link" id="myBtn"><a href="#">Award</a></li>
+            <li class="nav-link auth"><a href="#">Write me</a></li>
+        </ul>
     </nav>
-
-    <section class="home"></section>
-    <div class="progs" id="progs">
-        <h1 style="color: white;">Проекти</h1>
-        <div class="contains">
-            <div class="cont ani">
-                <div class="img1"></div>
-            </div>
-
-            <div class="cont2 ani">
-                <div class="img2"></div>
-            </div>
-
-            <div class="cont3 ani">
-                <div class="img3"></div>
-            </div>
-        </div>
-        <div class="containsec">
-            <div class="cont4 ani">
-                <div class="img4"></div>
-            </div>
-            <div class="cont5 ani">
-                <div class="img5"></div>
-            </div>
-        </div>
+    <div class="langs ani">
+        <p class="en" style="color: red;">En</p>
+        <p class="ua"><a href="./assets/pages/ua.html">Ua</a></p>
+        <p class="ru"><a href="./assets/pages/ru.html">Ru</a></p>
     </div>
 
-    <div class="ski" id="ski">
-        <h1 class="title" style="text-align: center; font-family: 'Slackside One', cursive; color: white; font-size: 35px;">Навички</h1>
-        <div class="pats sectors">
-            <div class="pat1 ani">
-                <i class="fa fa-laptop-code"></i>
-                <p>Знання HTML CSS JS</p>
+    <header>
+        <div class="wrap ani">
+            <h1 class="title">Artem Poltavets</h1>
+            <h1 class="dev">I am a <span class="blue">Web Developer</span></h1>
+            <p class="insp">Inspired by Development</p>
+            <div class="social ani">
+                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-tiktok" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-telegram" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-discord" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
             </div>
-            <div class="pat2 ani">
-                <i class="fa-brands fa-bootstrap"></i>
-                <p>Знання Bootstrap</p>
-            </div>
-            <div class="pat3 anith">
-                <i class="fa-brands fa-angular"></i>
-                <p>Володіння роботи з Angular</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="sertificate" id="awards">
-        <h1 style="font-family: 'Slackside One', cursive;">Нагороди</h1>
-        <img class="ani" src="./assets/imgs/sert.jpg" width="600px">
-    </div>
-
-    <div class="abme" id="me">
-        <h1 style="color: white;">Про мене</h1>
-        <div class="accord">
-            <button class="accordion anisec">Початок шляху в розробку</button>
-            <div class="panel">
-                <p class="fir">Почав цікавитись розробкою ще з 2021 року</p>
-            </div>
-
-            <button class="accordion anisec">Розвиток хоббі</button>
-            <div class="panel">
-                <p class="sec">Намагався вивчити Frontend розробку по <span>YouTube.</span></p>
-            </div>
-
-            <button class="accordion anisec">Сьогодення</button>
-            <div class="panel">
-                <p class="third">Навчався в <span class="skilll">Skill</span><span class="up">Up </span>курсах. Маю гарну кількість знань у верстці та <span class="js">Js</span>.Помимо HTML, CSS, JS знаю фреймвор, як <span class="angular">Angular</span> та бібліотеку
-                    <span class="boots">Bootstrap</span></p>
-            </div>
-            <div class="md">
-                <button><a href="">Більше про мене</a></button>
+            <div class="me ">
+                <img src="./assets/imgs/me.png " alt=" ">
             </div>
         </div>
+    </header>
 
-        <div class="modal">
-            <div class="modal-content">
-                <button class="trigger close-button" id="x">x</button>
-                <form id="form">
-                    <h1 class="main">Що вас цікавить?</h1>
-                    <div class="field1">
-                        <label for="from_name"></label>
-                        <input type="text" name="from_name" id="from_name" placeholder="Ім'я" required>
-                    </div>
-                    <div class="field2">
-                        <label for="from_email"></label>
-                        <input type="email" name="from_email" id="from_email" placeholder="Ел. пошта" required>
-                    </div>
-                    <div class="field3">
-                        <label for="message"></label>
-                        <textarea type="input" name="message" id="message" placeholder="Ваше повідомлення" required></textarea>
-                    </div>
+    <main>
+        <h1 class="services ani">Services</h1>
+        <p class="cli">Which services for my clients?</p>
+        <div class="cont1">
+            <div class="frag1 ani">
+                <h1 class="layout">Web layout</h1>
+                <div class="font"><i class="fa fa-code "></i></div>
+                <div class="elem">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>Bootstrap</p>
+                </div>
+            </div>
 
-                    <input type="submit" id="button" value="Надіслати" required>
-                </form>
-                <div class="social" style="font-size: 29px; text-align: center; margin-top: 50px; margin-left: -40px;">
-                    <i style="margin-right: 20px;" class="fa-brands fa-instagram"></i>
-                    <i style="margin-right: 20px;" class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-linkedin"></i>
+            <div class="frag2 ani ">
+                <h1 class="layout ">Web Development</h1>
+                <div class="font "><i class="fa-brands fa-square-js "></i></div>
+                <p class="js ">JavaScript</p>
+            </div>
+
+            <div class="frag3 ani ">
+                <h1 class="layout ">Figma layout`s creation</h1>
+                <div class="font "><i class="fa-brands fa-figma "></i></div>
+                <p class="figma ">Figma</p>
+            </div>
+        </div>
+        <div class="cont2 ">
+            <div class="frag4 ani ">
+                <h1 class="layout ">Figma layout`s creation</h1>
+                <div class="font "><i class="fa fa-mobile "></i></div>
+                <div class="elem ">
+                    <p>HTML</p>
+                    <p>CSS</p>
                 </div>
             </div>
         </div>
 
+        <div class="abme ">
+            <h1 class="aboutme ani ">About me</h1>
+            <div class="me2 ">
+                <img src="./assets/imgs/me2.png ">
+            </div>
+            <div class="artem ">
+                <h1 class="name ani ">Artem Poltavets</h1>
+                <p class="story ani ">I like spend my free time for self development. <br> Frontend development it`s one of my hobbies, <br> but it can be history, economy, but sometimes it`s so <br> boring and i resume to improve <br> my CSS, JS skills.</p>
+                <div class="spec">
+                    <div class="specskills ">
+                        <h1 class="skills ani ">My special skills</h1>
+                        <div class="bar1 ">
+                            <div class="stat ani ">
+                                <p class="cre ">Creativity</p>
+                                <p class="per ">95%</p>
+                            </div>
+                            <div class="container ">
+                                <div class="blucol "></div>
+                            </div>
+                        </div>
 
+                        <div class="bar2 ani ">
+                            <div class="stat ">
+                                <p class="cre ">Responsibility</p>
+                                <p class="per2 ">80%</p>
+                            </div>
+                            <div class="container ">
+                                <div class="blucol2 "></div>
+                            </div>
+                        </div>
 
+                        <div class="bar3 ani ">
+                            <div class="stat ">
+                                <p class="cre ">Flexibility</p>
+                                <p class="per3 ">70%</p>
+                            </div>
+                            <div class="container ">
+                                <div class="blucol3 "></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <div class="progs ">
+            <h1 class="prog ani ">Progects</h1>
+            <p class="creat ani ">My creative progects</p>
+            <p class="notif ani ">#click at img to see site</p>
+            <div class="pat1 ">
+                <div class="img1 ani">
+                    <a href="https://artem-user-19.github.io/Konstruct-template/ " target="_blank "><img src="./assets/imgs/progs/image 7.png " alt=" "></a>
+                </div>
+                <div class="img2 ani">
+                    <a href="https://artem-user-19.github.io/GameZone/ " target="_blank "><img src="./assets/imgs/progs/image 8.png " alt=" "></a>
+                </div>
+                <div class="img3 ani">
+                    <a href="https://artem-user-19.github.io/cyberjungle/ " target="_blank "><img src="./assets/imgs/progs/image 9.png " alt=" "></a>
+                </div>
+            </div>
 
-        <script type="text/javascript">
-            emailjs.init('OTMtb4vbOxp7Wr4Ke')
-        </script>
-        <script>
-            const btn = document.getElementById('button');
+            <div class="pat2 ">
+                <div class="img4 ani">
+                    <a href="https://artem-user-19.github.io/oku/ " target="_blank "><img src="./assets/imgs/progs/image 10.png " alt=" "></a>
+                </div>
+                <div class="img5 ani">
+                    <a href="https://artem-user-19.github.io/explore-indonesia/ " target="_blank "><img src="./assets/imgs/progs/image 11.png " alt=" "></a>
+                </div>
+                <div class="img6 ani">
+                    <a href="https://artem-user-19.github.io/game-platform/ " target="_blank "><img src="./assets/imgs/progs/image 12.png " alt=" "></a>
+                </div>
+            </div>
+        </div>
+    </main>
 
-            document.getElementById('form')
-                .addEventListener('submit', function(event) {
-                    event.preventDefault();
+    <footer>
+        <h1 class="port ">Portfolio</h1>
+        <div class="reg ">
+            <form id="form">
+                <div class="field f">
+                    <input type="text" name="from_name" id="from_name" placeholder="Name">
+                </div>
+                <div class="field s">
+                    <input type="text" name="from_email" id="from_email" placeholder="Email">
+                </div>
+                <div class="field t">
+                    <textarea type="text" name="message" id="message" placeholder="Message"></textarea>
+                </div>
 
-                    btn.value = 'Sending...';
+                <input type="submit" id="button" value="Send Email">
+            </form>
+        </div>
+        <div class="contacts ">
+            <div class="phone ">
+                <span class="phone2"><i class="fa-solid fa-phone " style="color: #ffffff; "></i></span><span class="phonenumber "><a href="tel:+380634469391 ">+380634469391</a></span>
+            </div>
 
-                    const serviceID = 'default_service';
-                    const templateID = 'template_v53ze08';
+            <div class="email ">
+                <div class="mail ">
+                    <span><i class="fa-regular fa-envelope " style="color: #ffffff; "></i></span><span class="mailtxt ">frontender354@gmail.com</span>
+                </div>
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-                    emailjs.sendForm(serviceID, templateID, this)
-                        .then(() => {
-                            btn.value = 'Send Email';
-                            btn.value = "Sent";
-                        }, (err) => {
-                            btn.value = 'Sent';
-                            alert(JSON.stringify(err));
-                        });
-                });
-
-            const modal = document.querySelector(".modal");
-            const trigger = document.querySelector(".call");
-            const closeButton = document.querySelector(".close-button");
-
-            function toggleModal() {
-                modal.classList.toggle("show-modal");
-            }
-
-            function windowOnClick(event) {
-                if (event.target === modal) {
-                    toggleModal();
-                }
-            }
-            trigger.addEventListener("click", toggleModal);
-            closeButton.addEventListener("click", toggleModal);
-            window.addEventListener("click", windowOnClick);
-
-            var mainListDiv = document.getElementById("mainListDiv"),
-                mediaButton = document.getElementById("mediaButton");
-
-            mediaButton.onclick = function() {
-
-                "use strict";
-
-                mainListDiv.classList.toggle("show_list");
-                mediaButton.classList.toggle("active");
-
-            };
-
-
-            var acc = document.getElementsByClassName("accordion");
-            var i;
-
-            for (i = 0; i < acc.length; i++) {
-                acc[i].addEventListener("click", function() {
-                    this.classList.toggle("active");
-                    var panel = this.nextElementSibling;
-                    if (panel.style.maxHeight) {
-                        panel.style.maxHeight = null;
-                    } else {
-                        panel.style.maxHeight = panel.scrollHeight + "px";
-                    }
-                });
-            }
-
-            const the_animation = document.querySelectorAll('.ani')
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('scroll-animation')
-                    } else {
-                        entry.target.classList.remove('scroll-animation')
-                    }
-
-                })
-            }, {
-                threshold: 0.5
-            });
-            //
-            for (let i = 0; i < the_animation.length; i++) {
-                const elements = the_animation[i];
-
-                observer.observe(elements);
-            }
-
-            const the_animationsec = document.querySelectorAll('.anisec')
-
-            const observers = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('scroll-animationsec')
-                    } else {
-                        entry.target.classList.remove('scroll-animationsec')
-                    }
-
-                })
-            }, {
-                threshold: 0.5
-            });
-            //
-            for (let i = 0; i < the_animationsec.length; i++) {
-                const elements = the_animationsec[i];
-
-                observers.observe(elements);
-            }
-
-            const the_animationth = document.querySelectorAll('.anith')
-
-            const observerss = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('scroll-animationth')
-                    } else {
-                        entry.target.classList.remove('scroll-animationth')
-                    }
-
-                })
-            }, {
-                threshold: 0.5
-            });
-            //
-            for (let i = 0; i < the_animationth.length; i++) {
-                const elements = the_animationth[i];
-
-                observerss.observe(elements);
-            }
-        </script>
+    <script type="text/javascript">
+        emailjs.init('OTMtb4vbOxp7Wr4Ke')
+    </script>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

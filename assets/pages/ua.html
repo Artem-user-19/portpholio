@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/ua.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('OTMtb4vbOxp7Wr4Ke')
+    </script>
+</head>
+
+<body>
+    <nav>
+        <h2 class="logo" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Портфоліо</h2>
+        <div class="bars">
+            <i class="fa fa-bars"></i>
+        </div>
+        <ul class="nav-links ani">
+            <li class="nav-link"><a href="#home" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Головна</a></li>
+            <li class="nav-link"><a href="#serv" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Послуги</a></li>
+            <li class="nav-link"><a href="#ab" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Про мене</a></li>
+            <li class="nav-link"><a href="#prog" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Проєкти</a></li>
+            <li class="nav-link" id="myBtn"><a style="cursor: pointer; font-family: Verdana, Geneva, Tahoma, sans-serif;">Нагороди</a></li>
+            <li class="nav-link auth"><a href="#me" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Написати мені</a></li>
+        </ul>
+    </nav>
+    <div class="langs ani">
+        <p class="en"><a href="../../index.html">En</a></p>
+        <p class="ua" style="color: red;">Ua</p>
+        <p class="ru"><a href="../pages/ru.html">Ru</a></p>
+    </div>
+
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="./assets/imgs/sert.jpg" alt="">
+        </div>
+
+    </div>
+
+    <header>
+        <div class="wrap ani" id="home">
+            <h1 class="title">Артем Полтавець</h1>
+            <h1 class="dev">Я <span class="blue">Веб розробник</span></h1>
+            <p class="insp" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Сповнений жаги до розробки</p>
+            <div class="social ani">
+                <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-tiktok" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-telegram" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-discord" style="color: #ffffff;"></i>
+                <i class="fa-brands fa-linkedin-in" style="color: #ffffff;"></i>
+            </div>
+            <div class="me ">
+                <img src="../imgs/me.png" alt=" ">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="services ani" id="serv">Послуги</h1>
+        <p class="cli " style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Які послуги маю для свої клієнтів?</p>
+        <div class="cont1 ">
+            <div class="frag1 ani ">
+                <h1 class="layout ">Верстка сайтів</h1>
+                <div class="font "><i class="fa fa-code "></i></div>
+                <div class="elem ">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>Bootstrap</p>
+                </div>
+            </div>
+
+            <div class="frag2 ani">
+                <h1 class="layout2 ">Веб розробка</h1>
+                <div class="font "><i class="fa-brands fa-square-js "></i></div>
+                <p class="js ">JavaScript</p>
+            </div>
+
+            <div class="frag3 ani ">
+                <h1 class="layout3 ">Створення Figma макетів</h1>
+                <div class="font "><i class="fa-brands fa-figma "></i></div>
+                <p class="figma ">Figma</p>
+            </div>
+        </div>
+        <div class="cont2 ">
+            <div class="frag4 ani ">
+                <h1 class="layout4 ">Респонсивно/Адаптивна верстка</h1>
+                <div class="font "><i class="fa fa-mobile "></i></div>
+                <div class="elem ">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="abme" id="ab">
+            <h1 class="aboutme ani">Про мене</h1>
+            <div class="me2 ">
+                <img src="../imgs/me2.png ">
+            </div>
+            <div class="artem ">
+                <h1 class="name ani ">Артем Полтавець</h1>
+                <p class="story ani" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Я люблю приділяти свій час саморозвитку<br> Frontend розробка це одне з моїх хобі, <br> але це також може бути історія, економіка, але це<br> буває нудно та я продовжую покращувати <br> свої CSS, JS навички.</p>
+                <div class="specskills">
+                    <h1 class="skills ani">Мої особливі навички</h1>
+                    <div class="bar1 ">
+                        <div class="stat ani">
+                            <p class="cre" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Креативність</p>
+                            <p class="per">95%</p>
+                        </div>
+                        <div class="container">
+                            <div class="blucol"></div>
+                        </div>
+                    </div>
+
+                    <div class="bar2 ani">
+                        <div class="stat">
+                            <p class="res" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Відповідальність</p>
+                            <p class="per2">80%</p>
+                        </div>
+                        <div class="container">
+                            <div class="blucol2"></div>
+                        </div>
+                    </div>
+
+                    <div class="bar3 ani">
+                        <div class="stat">
+                            <p class="flex" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Гнучкість</p>
+                            <p class="per3">70%</p>
+                        </div>
+                        <div class="container">
+                            <div class="blucol3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="progs" id="prog">
+            <h1 class="prog ani ">Проєкти</h1>
+            <p class="creat ani " style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Мої креативні проєкти</p>
+            <p class="notif ani ">#натисніть на зображення щоб перейти до сайту</p>
+            <div class="pat1 ">
+                <div class="img1 ani ">
+                    <a href="https://artem-user-19.github.io/Konstruct-template/ " target="_blank "><img src="../imgs/progs/image 7.png " alt=" "></a>
+                </div>
+                <div class="img2 ani ">
+                    <a href="https://artem-user-19.github.io/GameZone/ " target="_blank "><img src="../imgs/progs/image 8.png " alt=" "></a>
+                </div>
+                <div class="img3 ani ">
+                    <a href="https://artem-user-19.github.io/cyberjungle/ " target="_blank "><img src="../imgs/progs/image 9.png " alt=" "></a>
+                </div>
+            </div>
+
+            <div class="pat2 ">
+                <div class="img4 ani ">
+                    <a href="https://artem-user-19.github.io/oku/ " target="_blank "><img src="../imgs/progs/image 10.png " alt=" "></a>
+                </div>
+                <div class="img5 ani ">
+                    <a href="https://artem-user-19.github.io/explore-indonesia/ " target="_blank "><img src="../imgs/progs/image 11.png " alt=" "></a>
+                </div>
+                <div class="img6 ani ">
+                    <a href="https://artem-user-19.github.io/game-platform/ " target="_blank "><img src="../imgs/progs/image 12.png " alt=" "></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="me">
+        <h1 class="port" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Портфоліо</h1>
+        <div class="reg ">
+            <form id="form">
+                <div class="field f">
+                    <input type="text" name="from_name" id="from_name" placeholder="Ім'я">
+                </div>
+                <div class="field s">
+                    <input type="text" name="from_email" id="from_email" placeholder="Ел.пошта">
+                </div>
+                <div class="field t">
+                    <textarea type="text" name="message" id="message" placeholder="Повідомлення"></textarea>
+                </div>
+
+                <input type="submit" id="button" value="Send Email">
+            </form>
+        </div>
+        <div class="contacts ">
+            <div class="phone ">
+                <span class="phone2"><i class="fa-solid fa-phone " style="color: #ffffff; "></i></span><span class="phonenumber "><a href="tel:+380634469391 ">+380634469391</a></span>
+            </div>
+
+            <div class="email ">
+                <div class="mail ">
+                    <span><i class="fa-regular fa-envelope " style="color: #ffffff; "></i></span><span class="mailtxt ">frontender354@gmail.com</span>
+                </div>
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('OTMtb4vbOxp7Wr4Ke')
+    </script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

@@ -1,35 +1,17 @@
-var mainListDiv = document.getElementById("mainListDiv"),
-    mediaButton = document.getElementById("mediaButton");
+const bars = document.querySelector(".bars");
+const nav = document.querySelector("nav");
+let fabar = document.querySelector(".fa-bars")
 
-mediaButton.onclick = function() {
-
-    "use strict";
-
-    mainListDiv.classList.toggle("show_list");
-    mediaButton.classList.toggle("active");
-
+bars.onclick = () => {
+    nav.classList.toggle("active");
+    if (fabar.classList.contains("fa-bars")) {
+        fabar.classList.replace("fa-bars", "fa-xmark")
+    } else {
+        fabar.classList.replace("fa-xmark", "fa-bars")
+    }
 };
 
-const x = document.getElementById("x")
-const modal = document.querySelector(".modal");
-const trigger = document.querySelector(".trigger");
-const closeButton = document.querySelector(".close-button");
-
-function toggleModal() {
-    modal.classList.toggle("show-modal");
-}
-
-function windowOnClick(event) {
-    if (event.target === modal) {
-        toggleModal();
-    }
-}
-
-trigger.addEventListener("click", toggleModal);
-closeButton.addEventListener("click", toggleModal);
-window.addEventListener("click", windowOnClick);
-
-const btn = document.getElementById("button");
+const btn = document.getElementById('button');
 
 document.getElementById('form')
     .addEventListener('submit', function(event) {
@@ -38,7 +20,7 @@ document.getElementById('form')
         btn.value = 'Sending...';
 
         const serviceID = 'default_service';
-        const templateID = 'template_y5lo6aj';
+        const templateID = 'template_x1s3j65';
 
         emailjs.sendForm(serviceID, templateID, this)
             .then(() => {
