@@ -26,7 +26,6 @@
             <li class="nav-link"><a href="#serv" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Послуги</a></li>
             <li class="nav-link"><a href="#ab" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Про мене</a></li>
             <li class="nav-link"><a href="#prog" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Проєкти</a></li>
-            <li class="nav-link" id="myBtn"><a style="cursor: pointer; font-family: Verdana, Geneva, Tahoma, sans-serif;">Нагороди</a></li>
             <li class="nav-link auth"><a href="#me" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Написати мені</a></li>
         </ul>
     </nav>
@@ -182,13 +181,13 @@
         <div class="reg ">
             <form id="form">
                 <div class="field f">
-                    <input type="text" name="from_name" id="from_name" placeholder="Ім'я">
+                    <input type="text" name="from_name" id="from_name" placeholder="Ім'я" required>
                 </div>
                 <div class="field s">
-                    <input type="text" name="from_email" id="from_email" placeholder="Ел.пошта">
+                    <input type="email" name="from_email" id="from_email" placeholder="Ел.пошта" required>
                 </div>
                 <div class="field t">
-                    <textarea type="text" name="message" id="message" placeholder="Повідомлення"></textarea>
+                    <textarea type="text" name="message" id="message" placeholder="Повідомлення" required></textarea>
                 </div>
 
                 <input type="submit" id="button" value="Send Email">
@@ -204,6 +203,7 @@
                     <span><i class="fa-regular fa-envelope " style="color: #ffffff; "></i></span><span class="mailtxt ">frontender354@gmail.com</span>
                 </div>
     </footer>
+    <button onclick="topFunction()" id="myBatn" title="Go to top"><i class="fa-solid fa-up-long"></i></button>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
     <script type="text/javascript">

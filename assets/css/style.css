@@ -413,15 +413,6 @@
                                                                     width: 400px;
                                                                 }
                                                                 
-                                                                .img4 img:hover,
-                                                                .img5 img:hover,
-                                                                .img6 img:hover,
-                                                                .img1 img:hover,
-                                                                .img2 img:hover,
-                                                                .img3 img:hover {
-                                                                    width: 410px;
-                                                                }
-                                                                
                                                                 .img3 img {
                                                                     height: 270px;
                                                                 }
@@ -434,6 +425,10 @@
                                                                     margin-top: 100px;
                                                                     background-color: #362D2D;
                                                                     padding: 20px 0px;
+                                                                }
+                                                                
+                                                                .contacts {
+                                                                    margin-top: -130px;
                                                                 }
                                                                 
                                                                 .port {
@@ -546,6 +541,31 @@
                                                                     border-radius: 50%;
                                                                 }
                                                                 
+                                                                #myBatn {
+                                                                    display: none;
+                                                                    position: fixed;
+                                                                    bottom: 20px;
+                                                                    right: 20px;
+                                                                    z-index: 99;
+                                                                    font-size: 18px;
+                                                                    border: none;
+                                                                    outline: none;
+                                                                    background-color: red;
+                                                                    color: white;
+                                                                    cursor: pointer;
+                                                                    padding: 15px;
+                                                                    border-radius: 4px;
+                                                                }
+                                                                
+                                                                .ani {
+                                                                    opacity: 0;
+                                                                    transition: all 0.8s ease-out;
+                                                                }
+                                                                
+                                                                .scroll-animation {
+                                                                    opacity: 1;
+                                                                }
+                                                                
                                                                 @keyframes app {
                                                                     0% {
                                                                         opacity: 0;
@@ -614,13 +634,13 @@
                                                                         margin-right: 10px;
                                                                     }
                                                                     .phonenumber {
-                                                                        margin-right: -290px;
+                                                                        margin-right: -190px;
                                                                     }
                                                                     .fa-envelope {
                                                                         margin-right: 10px;
                                                                     }
                                                                     .email {
-                                                                        margin-right: 0px;
+                                                                        margin-right: 100px;
                                                                     }
                                                                 }
                                                                 
@@ -685,13 +705,12 @@
                                                                     }
                                                                 }
                                                                 
-                                                                @media (max-width:609px) {
+                                                                @media (max-width:673px) {
                                                                     .contacts {
                                                                         margin-top: 100px;
                                                                     }
-                                                                    .email,
                                                                     .phone {
-                                                                        text-align: center;
+                                                                        margin-left: 0px;
                                                                     }
                                                                     .reg {
                                                                         text-align: center;
@@ -704,6 +723,18 @@
                                                                     #button {
                                                                         text-align: center;
                                                                         margin-left: 0px;
+                                                                    }
+                                                                    .phone {
+                                                                        text-align: center;
+                                                                        margin-top: -80px;
+                                                                        margin-right: 170px;
+                                                                    }
+                                                                    .email {
+                                                                        text-align: center;
+                                                                        margin-left: 130px;
+                                                                    }
+                                                                    .mailtxt {
+                                                                        text-align: center;
                                                                     }
                                                                 }
                                                                 
@@ -754,6 +785,24 @@
                                                                     }
                                                                     .skills {
                                                                         display: none;
+                                                                    }
+                                                                }
+                                                                
+                                                                @media (max-width:411px) {
+                                                                    .mailtxt {
+                                                                        margin-left: -20px;
+                                                                    }
+                                                                }
+                                                                
+                                                                @media (max-width:389px) {
+                                                                    .mailtxt {
+                                                                        margin-left: -40px;
+                                                                    }
+                                                                }
+                                                                
+                                                                @media (max-width:369px) {
+                                                                    .mailtxt {
+                                                                        margin-left: -50px;
                                                                     }
                                                                 }
                                                                 
